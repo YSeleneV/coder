@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px auto auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  grid-row: 1/2;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #6bbfd2;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ea23e6;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.hdNav {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hdNav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.hdNav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.hdNav ul li a:hover {
+  color: #ac36ca;
+}
+
+main {
+  grid-row: 2/3;
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #1e1e1e;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.infoImg,
+.infoImg2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(218, 208, 241);
+}
+
+.infoImg {
+  width: 80%;
+  height: 80%;
+}
+
+.infoImg2 {
+  width: 100%;
+  height: 200px;
+}
+
+button {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.infoDetails {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  width: 80%;
+}
+
+.infoDetails p {
+  text-align: justify;
+}
+
+.infoImgsCont {
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.infoDetails a {
+  display: flex;
+  justify-content: center;
+}
+
+.infoDetails img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.benefitsContainer {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.benefImg {
+  display: flex;
+  justify-content: center;
+}
+
+.benefImg img {
+  width: 50%;
+}
+
+.benefDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  text-align: justify;
+}
+
+.benefDetails h3 {
+  align-self: center;
+}
+
+.cardContainer {
+  display: grid;
+  height: auto;
+  grid-template-columns: auto auto auto;
+}
+
+.serviceCard {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.serviceCard img {
+  width: 50%;
+}
+
+.serviceCard h4 {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.serviceCard p {
+  width: 50%;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.serviceCard button {
+  margin-top: 20px;
+  width: 80%;
+}
+
+button:hover {
+  background-color: pink;
+  transition: 1s;
+  color: black;
+}
+
+.toCenter {
+  display: block;
+  text-align: center;
+}
+
+.blogImg {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+footer img {
+  width: 20%;
+  padding-top: 30px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding-bottom: 30px;
+}
+
+footer div a {
+  display: flex;
+  justify-content: center;
+}
+
+footer div a img {
+  width: 30%;
+}
+
+.zenRock {
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+}
+
+.buttonAnimaton {
+  animation: scaleOnLoad 2s ease-in-out 3;
+}
+
+@keyframes scaleOnLoad {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1.6);
+  }
+}
+.terapyHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terapyHead img {
+  width: 250px;
+}
+
+.terapyHead h6 {
+  font-size: large;
+  opacity: 1;
+  animation: slideIn 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+    color: rgba(0, 0, 0, 0.103);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.523);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media only screen and (max-width: 600px) {
+  section h2 {
+    font-size: 1rem;
+  }
+  .infoImg {
+    height: 200px;
+  }
+  button {
+    font-size: 0.7rem;
+  }
+  .info {
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+  }
+  .info button {
+    margin-top: 10px;
+  }
+  .benefitsContainer {
+    grid-template-columns: 1fr;
+  }
+  .benefDetails h3 {
+    margin-top: 10px;
+  }
+  .benefDetails p {
+    padding-bottom: 30px;
+  }
+  .cardContainer {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
